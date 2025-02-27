@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #53606d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 150%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 35px 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 400px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search-icon:hover {
+    color: #007bff;
+}
+
+/* Profile Icon */
+.profile-icon {
+    font-size: 20px;
+    color: #f9f7f7;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.profile-icon:hover {
+    color: #f8f406;
+}
+
+/* Login & Signup Links */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #eef0f1;
+    font-weight: bold;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+    color: #888;
+}
+
+/* Language Links */
+.language-links {
+    text-align: right;
+    margin: 20px 0;
+    padding-top: 5px;
+}
+
+.language-links a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.language-links a:hover {
+    color: #888;
+}
+
+/* Horizontal Line */
+hr {
+    border: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+/* home image  */
+.home-image {
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        margin: 2 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .search-bar {
+        width: 150%;
+        padding-right: 50px;
+        text-align: left;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 10px;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: left;
+    }
+
+    .language-links {
+        text-align: center;
+    }
+}
