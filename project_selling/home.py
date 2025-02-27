@@ -1,10 +1,13 @@
 from flask import Flask, render_template
+from routes import routes
+from db import db, app
 
-app = Flask(__name__)
+app.register_blueprint(routes)
 
-@app.route('/')
-def home():
-    return render_template('home.html')
+with app.app_context():
+    db.create_all()
+    print("database table is create succesfully")
+app.secret_key = "surendra"
 
 if __name__ == '__main__':
     app.run(debug=True)
